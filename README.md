@@ -1,2 +1,3 @@
 # matbench-bandgap-assessment
-Assessment from 'Data Analytics for Chemists' module taken as part of 'Digital Chemistry' MSc at Imperial College London.
+Assessment from 'Data Analytics for Chemists' module taken as part of 'Digital Chemistry' MSc at Imperial College London. 
+Our task is to explore the experimental bandgap dataset from matbench (https://matbench.materialsproject.org/Leaderboards%20Per-Task/matbench_v0.1_matbench_expt_gap/) and try out some different approaches to predict bandgap. I made some benchmark models (XGBoost), investigated feature importance using sklearns permutation importance function, made a more sophisticated two-step model which combines a classifier and regressor to better deal with the zero-inflated data, and made an attempt at a transfer learning model pretrained on DFT bandgap dataset (also from matbench). So far the only model which beats vanilla XGBoost is the two-step model.
